@@ -34,6 +34,11 @@ env/
 venv.bak/
 venv*/
 
+# Enivronment Variables
+.env
+.env.*
+
+
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints
 
