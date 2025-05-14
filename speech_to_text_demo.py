@@ -1,11 +1,11 @@
 import requests
 import os
 from dotenv import load_dotenv
+from elevenlabs import ElevenLabs
 
 # ElevenLabs API Key (Consider moving this to an environment variable for security)
 
 load_dotenv()
-
 
 API_KEY = os.getenv("ELEVENLABS_API_KEY")
 URL = "https://api.elevenlabs.io/v1/speech-to-text"
@@ -20,7 +20,7 @@ def find_audio_file(target_name):
 
 AUDIO_FILE = find_audio_file('Test.m4a')
 
-def speech_to_text(voice="Rachel", language="es"):
+def speech_to_text():
     headers = {
         "xi-api-key": API_KEY,
     }
@@ -41,6 +41,7 @@ def speech_to_text(voice="Rachel", language="es"):
         print(f"Response: {result}")
     else:
         raise Exception(f"API Error: {response.status_code} - {response.text}")
+
 
 if __name__ == "__main__":
     print("Starting transcription...")
