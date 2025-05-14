@@ -3,9 +3,9 @@ from moviepy.editor import VideoFileClip, AudioFileClip
 import os
 
 # ElevenLabs API Key
-API_KEY = "your_elevenlabs_api_key"
+API_KEY = "sk_ecfbae5e6c9bb0175a0b7f84789d90e98c90a54e14d712d9"
 
-def generate_dubbed_audio(text, voice="Rachel", language="es"):  # Spanish as an example
+def generate_dubbed_audio(text, voice="Rachel", language="es"):
     url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice}"
     headers = {
         "xi-api-key": API_KEY,
