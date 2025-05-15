@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#drop-zone {
+  border: 2px dashed #aaa;
+  padding: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+#drop-zone input[type="file"] {
+  display: none;
+}
+
+.language-select {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  padding: 5px;
+  margin-right: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#output {
+  margin-top: 30px;
+  text-align: left;
+}
+
+#fileInput {
+  display: none;
+}
+
+#drop-zone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#drop-zone.hover {
+  background-color: #f0f0f0;
+  border-color: #999;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.language-select {
+  margin-bottom: 20px;
+}
+
+#submitBtn,
+#dubBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#output {
+  margin-top: 30px;
+}
+
+#resultText {
+  white-space: pre-wrap;
+}
+
+#dubbingStatus {
+  margin-top: 20px;
+  font-weight: bold;
+}
+

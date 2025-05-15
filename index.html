@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Audio AIchemist</title>
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Audio AIchemist Lecture Translator</h1>
+
+      <!-- File input -->
+      <div id="drop-zone">
+        <p>Drag and drop an MP3 or video file here or click to select one</p>
+        <input type="file" id="fileInput" accept=".mp3,.mp4,.mov,.wav" />
+      </div>
+
+      <!-- Language selection -->
+      <div class="language-select">
+        <label for="sourceLang">Source Language:</label>
+        <select id="sourceLang">
+          <option value="en" selected>English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+
+        </select>
+
+        <label for="targetLang">Target Language:</label>
+        <select id="targetLang">
+          <option value="">Select target</option>
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+        </select>
+      </div>
+
+      <!-- Feature Buttons -->
+      <div class="button-group">
+        <button id="transcribeBtn">Transcribe</button>
+        <button id="translateBtn">Translate</button>
+        <button id="dubBtn">Translate Audio</button>
+      </div>
+
+      <!-- Output -->
+      <div id="output">
+        <h2>Output</h2>
+        <p><strong>Transcription:</strong> <span id="transcriptionText">None</span></p>
+        <p><strong>Translation:</strong> <span id="translatedText">None</span></p>
+        <p><strong>Dubbing Status:</strong> <span id="dubStatus">Not started</span></p>
+        <video id="dubbedVideo" controls style="display: none; max-width: 100%;"></video>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
